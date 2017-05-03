@@ -1,0 +1,36 @@
+{
+    "name": "npm.getstats",
+    "version": "1.0.3",
+    "description": "Get npm module stats",
+    "main": "build/npm.getstats.js",
+    "scripts": {
+        "build": "babel js/index.js --out-file build/npm.getstats.js",
+        "watch": "babel js/index.js --out-file build/npm.getstats.js --watch",
+        "start": "node build/npm.getstats.js"
+    },
+    "keywords": [
+        "npm",
+        "totaldownloads",
+        "totaldownloadcount",
+        "downloadcount",
+        "download",
+        "count"
+    ],
+    "author": "igress",
+    "license": "ISC",
+    "dependencies": {
+        "qajax": "^1.3.0"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.24.1",
+        "babel-polyfill": "^6.23.0",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-es2015-node5": "^1.1.1",
+        "babili": "0.0.12"
+    },
+    "babel": {
+        "presets": [
+            "es2015"
+        ]
+    }
+}
